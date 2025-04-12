@@ -13,31 +13,38 @@ This project leverages **AgenticAI** to read and process files using advanced AI
    ```bash
    git clone https://github.com/praghi/agenticai-file-reader.git
 
-🔧 Initialize Git Repository (If Not Already Initialized)
-git init
+2. 🔧 Initialize Git Repository (If Not Already Initialized)
+   ```bash
+   git init
 
-📋 Check the Status of Your Changes
-git status
+3. 📋 Check the Status of Your Changes
+   ```bash
+   git status
 
-✅ Stage Files for Commit
-git add .
-Or to stage a specific file:
+4. ✅ Stage Files for Commit
+   ```bash
+   git add . 
 
-💬 Commit Changes with a Meaningful Message
-git commit -m "Your meaningful commit message here"
+5. 💬 Commit Changes with a Meaningful Message
+   ```bash
+   git commit -m "Your meaningful commit message here"
 
-🔗 Connect to a Remote Repository (If Not Already Connected)
-git remote add origin <your repo>
+6. 🔗 Connect to a Remote Repository (If Not Already Connected)
+    ```bash
+    git remote add origin <your repo>
 
-⬆️ Push Changes to Remote Repository
-To push to the main branch:
-git push -u origin main
+7. ⬆️ Push Changes to Remote Repository
+    ```bash
+    To push to the main branch:
+    git push -u origin main
 
-⬇️ Pull Latest Changes Before Pushing (To Avoid Merge Conflicts)
-git pull origin main --rebase
+8. ⬇️ Pull Latest Changes Before Pushing (To Avoid Merge Conflicts)
+    ```bash
+    git pull origin main --rebase
 
-🌿 Create and Switch to a New Branch (If Needed)
-git checkout -b feature-branch-name
+10. 🌿 Create and Switch to a New Branch (If Needed)
+   ```bash
+    git checkout -b feature-branch-name
 
 🔄 Merge a Branch into Main
 Switch to the main branch:
