@@ -143,7 +143,7 @@ if __name__ == "__main__":
     from dotenv import load_dotenv, find_dotenv
     load_dotenv(find_dotenv(), override=True)
 
-    st.image('langchain.png')
+    #st.image('langchain.png')
     st.subheader('LLM Question-Answering Application 🤖')
     with st.sidebar:
         # text_input for the OpenAI API key (alternative to python-dotenv and .env)
