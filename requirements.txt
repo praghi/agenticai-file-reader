@@ -7,3 +7,4 @@ chromadb
 tiktoken
 pinecone==3.2.2
 langchain-openai
+langchain_community
