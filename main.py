@@ -108,7 +108,7 @@ def insert_or_fetch_embeddings(index_name, chunks):
 
 
 def ask_and_get_answer(vector_store, q, k=3):
-    
+
     llm = ChatOpenAI(model='gpt-3.5-turbo', temperature=0)
     retriever = vector_store.as_retriever(search_type='similarity', search_kwargs={'k': k})
     chain = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=retriever)
@@ -137,17 +137,21 @@ def clear_history():
 if __name__ == "__main__":
     import os
 
-    # loading the OpenAI api key from .env
-    from dotenv import load_dotenv, find_dotenv
-    load_dotenv(find_dotenv(), override=True)
-
     #st.image('langchain.png')
     st.subheader('LLM Question-Answering Application 🤖')
     with st.sidebar:
         # text_input for the OpenAI API key (alternative to python-dotenv and .env)
-        api_key = st.text_input('OpenAI API Key:', type='password')
-        if api_key:
-            os.environ['OPENAI_API_KEY'] = api_key
+        st.write("Enter your OpenAI API Key to continue.")
+        api_key_openai = st.text_input('OpenAI API Key:', type='password')
+        if api_key_openai:
+            os.environ['OPENAI_API_KEY'] = api_key_openai 
+            
+
+        # Get Pinecone API Key from the user
+        st.write("Enter your PineCone API Key to continue.")
+        api_key_pinecone = st.text_input('Pinecone API Key:', type='password')
+        if api_key_pinecone:
+            os.environ['PINECONE_API_KEY'] = api_key_pinecone  # Set Pinecone API Key in environment
 
         # file uploader widget
         uploaded_file = st.file_uploader('Upload a file:', type=['pdf', 'docx', 'txt','csv'])
