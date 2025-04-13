@@ -154,7 +154,7 @@ if __name__ == "__main__":
             os.environ['PINECONE_API_KEY'] = api_key_pinecone  # Set Pinecone API Key in environment
 
         # file uploader widget
-        uploaded_file = st.file_uploader('Upload a file:', type=['pdf', 'docx', 'txt','csv'])
+        uploaded_file = st.file_uploader('Upload a file:', type=['pdf', 'docx', 'txt'])
 
         # chunk size number widget
         chunk_size = st.number_input('Chunk size:', min_value=100, max_value=2048, value=512, on_change=clear_history)
