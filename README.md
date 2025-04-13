@@ -9,7 +9,7 @@ This project leverages **AgenticAI** to read and process files using advanced AI
 
 ## Final LLM App 
 
-   Link: agenticai\summaryappout.png
+   Link: ![agenticai\summaryappout.png](https://github.com/praghi/agenticai-file-reader/blob/main/summaryappout.png)
 
 
 ## Installation
